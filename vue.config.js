@@ -7,9 +7,9 @@ module.exports = {
   ],
   pwa: {
     name: 'Workout Tracker',
-    themeColor: '#1976D2',
+    themeColor: '#121212',
     manifestOptions: {
-      background_color: '#1976D2'
+      background_color: '#121212'
     }
   }
 };

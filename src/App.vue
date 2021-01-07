@@ -1,15 +1,20 @@
 <template>
   <v-app>
-    <v-content>
+    <v-main>
       <router-view/>
-    </v-content>
+      <Navigation/>
+    </v-main>
   </v-app>
 </template>
 
 <script lang="ts">
   import Vue from 'vue';
+  import Navigation from '@/components/Navigation.vue';
 
   export default Vue.extend({
-    name: 'App'
+    name: 'App',
+    components: {
+      Navigation
+    }
   });
 </script>
