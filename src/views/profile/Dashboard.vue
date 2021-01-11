@@ -9,10 +9,10 @@
 
       <v-row dense>
         <v-col v-for="tile in tiles">
-          <v-card :to="{ name: tile.route }">
+          <v-card :to="{ name: tile.route }" replace>
             <v-card-text class="text-center">
               <v-icon color="primary">{{ tile.icon }}</v-icon>
-              <div class="body-1 grey--text text--lighten-2 mt-1">{{ tile.text }}</div>
+              <div class="grey--text text--lighten-2 mt-1">{{ tile.text }}</div>
             </v-card-text>
           </v-card>
         </v-col>
@@ -30,17 +30,17 @@
       tiles: [
         {
           icon: 'fa-dumbbell',
-          route: 'profile',
+          route: '',
           text: 'Exercises'
         },
         {
           icon: 'fa-child',
-          route: 'profile',
+          route: '',
           text: 'Measures'
         },
         {
           icon: 'fa-calendar',
-          route: 'profile',
+          route: '',
           text: 'Calendar'
         },
       ]

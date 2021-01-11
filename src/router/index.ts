@@ -5,14 +5,19 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    name: 'profile',
+    name: 'profile_dashboard',
     path: '/',
-    component: () => import('@/views/Profile.vue')
+    component: () => import('@/views/profile/Dashboard.vue')
   },
   {
-    name: 'workout',
+    name: 'workout_start',
     path: '/workout',
-    component: () => import('@/views/Workout.vue')
+    component: () => import('@/views/workout/Start.vue')
+  },
+  {
+    name: 'workout_session',
+    path: '/workout/session',
+    component: () => import('@/views/workout/Session.vue')
   }
 ];
 

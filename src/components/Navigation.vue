@@ -1,6 +1,5 @@
 <template>
   <v-bottom-navigation
-      :value="value"
       color="primary"
       fixed
   >
@@ -24,11 +23,11 @@
       items: [
         {
           icon: 'fa-user',
-          route: 'profile'
+          route: 'profile_dashboard'
         },
         {
           icon: 'fa-dumbbell',
-          route: 'workout'
+          route: 'workout_start'
         },
       ]
     })
